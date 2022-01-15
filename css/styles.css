@@ -1,0 +1,217 @@
+:root {
+  --activated-color: #2196f3;
+  --general-text-color: #757575;
+  --title-text-color: #212121;
+  --primary-color: #ffffff;
+  --contact-text-color: rgba(255, 255, 255, 0.6);
+  --footer-bg-color: #2f303a;
+  --secondary-bg-color: #f5f4fa;
+  --button-hover-color: #188ce8;
+}
+/* Общий CSS - начало */
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--general-text-color);
+  background-color: var(--primary-color);
+}
+/* общие свойства списков */
+.list {
+  list-style: none;
+}
+/* ощие свойства для ссылок */
+.link {
+  text-decoration: none;
+}
+/* общие свойства логотипа */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/* -------header CSS */
+
+/* логотип в header*/
+.header-logo {
+  color: var(--title-text-color);
+}
+.logo-begin {
+  color: var(--activated-color);
+}
+
+/* общие свойства списков в шапке */
+.header .list {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/* навигация по сайту */
+.navigation .link {
+  color: var(--title-text-color);
+}
+
+/* контакты в шапке */
+.header-contact .link {
+  color: var(--general-text-color);
+}
+
+/* общие свойства актив-ссылок в шапке*/
+.link.active,
+.navigation .link:hover,
+.navigation .link:focus,
+.header-contact .link:hover,
+.header-contact .link:focus {
+  color: var(--activated-color);
+}
+/* -------footer CSS */
+.footer {
+  background-color: var(--footer-bg-color);
+}
+/* логотип в footer */
+.footer-logo {
+  color: var(--primary-color);
+}
+/* контакты в footer */
+.address {
+  font-style: inherit;
+}
+
+.footer-contact .link {
+  color: var(--contact-text-color);
+}
+
+.footer-contact .contact-address {
+  color: var(--primary-color);
+}
+
+/* общие свойства актив-ссылок в футере*/
+.footer-contact .link:hover,
+.footer-contact .link:focus,
+.footer-contact .contact-address:hover,
+.footer-contact .contact-address:focus {
+  color: var(--activated-color);
+}
+/* Общий CSS - конец */
+/* ----------------------- */
+/* index.html CSS - начало */
+
+/* общие свойства заголовков h2, h3 */
+.title {
+  font-weight: 700;
+  color: var(--title-text-color);
+}
+
+.advantage-title,
+.gallery-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* секция герой */
+.hero {
+  background-color: var(--footer-bg-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+/* кнопка */
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-color);
+  background-color: var(--activated-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--button-hover-color);
+}
+
+/* секции преимуществ */
+.advantage-list .title {
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* секция наша команда */
+.team {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  background-color: var(--secondary-bg-color);
+}
+
+.team-list .title {
+  font-weight: 500;
+}
+
+.team-list .item {
+  background-color: var(--primary-color);
+}
+/* index.html CSS - конец */
+/* ----------------------- */
+/* portfolio.html CSS - начало */
+
+/* кнопки фильтра */
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filtr-active {
+  color: var(--primary-color);
+  background-color: var(--activated-color);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--primary-color);
+  background-color: var(--activated-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* список портфолио */
+.portfolio-list .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list .text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+/* portfolio.html CSS - конец */
