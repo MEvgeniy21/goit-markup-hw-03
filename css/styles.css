@@ -17,6 +17,34 @@ body {
   color: var(--general-text-color);
   background-color: var(--primary-color);
 }
+
+/* сброс марджинов и паддингов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* общие свойства контейнеров */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
+
+/* общие падинги для секций */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* общие свойства списков */
 .list {
   list-style: none;
@@ -34,9 +62,18 @@ body {
 }
 
 /* -------header CSS */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
 
 /* логотип в header*/
 .header-logo {
+  margin-right: 93px;
   color: var(--title-text-color);
 }
 .logo-begin {
@@ -45,9 +82,20 @@ body {
 
 /* общие свойства списков в шапке */
 .header .list {
+  display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header .list .item + .item {
+  margin-left: 50px;
+}
+
+.header .list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* навигация по сайту */
 .navigation .link {
@@ -55,6 +103,10 @@ body {
 }
 
 /* контакты в шапке */
+.header-contact {
+  margin-left: auto;
+}
+
 .header-contact .link {
   color: var(--general-text-color);
 }
@@ -69,15 +121,23 @@ body {
 }
 /* -------footer CSS */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-bg-color);
 }
 /* логотип в footer */
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
   color: var(--primary-color);
 }
 /* контакты в footer */
 .address {
   font-style: inherit;
+}
+
+.footer-contact .item + .item {
+  margin-top: 9px;
 }
 
 .footer-contact .link {
